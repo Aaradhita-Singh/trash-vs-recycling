@@ -34,11 +34,11 @@ def predict_image(image_path):
         print(f"Prediction: {prediction}")
 
         if prediction == 0:
-            servo.angle = 90
+            servo.angle = 60
             sleep(2)
             servo.angle = 0
         else:
-            servo.angle = -90
+            servo.angle = -60
             sleep(2)
             servo.angle = 0
 
